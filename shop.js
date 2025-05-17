@@ -484,3 +484,43 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+// Enhanced animation effects for Coming Soon overlay
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all coming soon overlays
+    const comingSoonOverlays = document.querySelectorAll('.coming-soon-overlay');
+    
+    // Add enhanced interaction effects
+    comingSoonOverlays.forEach(overlay => {
+      const slate = overlay.querySelector('.coming-soon-slate');
+      const text = overlay.querySelector('.coming-soon-text');
+      
+      overlay.addEventListener('mouseenter', () => {
+        // Create a more dramatic hover effect
+        slate.style.animation = 'none';
+        slate.style.transform = 'scale(1.05) translateY(-5px)';
+        slate.style.boxShadow = '0 15px 30px rgba(92, 141, 137, 0.5)';
+        slate.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        
+        // Make the text stand out more
+        text.style.animation = 'none';
+        text.style.textShadow = '0 0 15px rgba(255, 255, 255, 0.8)';
+        text.style.transition = 'all 0.3s ease';
+      });
+      
+      overlay.addEventListener('mouseleave', () => {
+        // Smooth transition back to original state
+        slate.style.transform = '';
+        slate.style.boxShadow = '';
+        
+        // Use setTimeout to prevent animation jump
+        setTimeout(() => {
+          slate.style.transition = '';
+          slate.style.animation = 'slate-animation 2.5s ease-in-out infinite';
+          
+          text.style.textShadow = '';
+          text.style.transition = '';
+          text.style.animation = 'pulse 2s ease-in-out infinite';
+        }, 50);
+      });
+    });
+  });
