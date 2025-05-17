@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MooMuffin Acres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>MooMuffin Acres</h1>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars" id="menu-btn"></i>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="animals.html">Our Animals</a></li>
+                    <li><a href="shop.html">Farm Shop</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="animals.html">Our Animals</a></li>
+                <li><a href="shop.html">Farm Shop</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Get In Touch</h1>
+            <p class="hero-subtitle">We'd love to hear from you! Send us a message, visit our farm, or connect with us on social media</p>
+        </div>
+        <div class="envelope-illustration"></div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="method-title">Visit Us</h3>
+                    <p class="method-text">MooMuffin Acres<br>123 Farm Road<br>Farmville, State 12345</p>
+                    <a href="https://maps.google.com" target="_blank" class="method-link">View on Map</a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="method-title">Call Us</h3>
+                    <p class="method-text">(555) 123-4567<br>Mon-Fri: 9am - 5pm<br>Sat-Sun: 10am - 4pm</p>
+                    <a href="tel:5551234567" class="method-link">Call Now</a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="method-title">Email Us</h3>
+                    <p class="method-text">info@yourfarm.com<br>shop@yourfarm.com<br>tours@yourfarm.com</p>
+                    <a href="mailto:info@yourfarm.com" class="method-link">Send Email</a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="method-title">Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="method-text">Follow us for updates!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Form Section -->
+    <section class="message-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="form-subtitle">Have questions about our farm, animals, or products? Fill out the form below and we'll get back to you as soon as possible!</p>
+                </div>
+                
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject...</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Farm Tour">Farm Tour</option>
+                            <option value="Animal Purchase">Animal Purchase</option>
+                            <option value="Farm Products">Farm Products</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Your Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <span class="checkbox-custom"></span>
+                            Sign me up for the farm newsletter to receive updates and special offers
+                        </label>
+                    </div>
+                    
+                    <p class="form-note"><span class="required">*</span> Indicates required fields</p>
+                    
+                    <div class="form-group full-width">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <!-- Replace with your actual Google Maps embed code -->
+            <div class="map-placeholder">
+                <div class="map-text">Interactive Map<br>Would Go Here</div>
+            </div>
+        </div>
+        <div class="map-overlay">
+            <div class="container">
+                <div class="hours-card">
+                    <h3 class="hours-title">Farm Hours</h3>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <div class="day">Monday - Thursday</div>
+                            <div class="time">By Appointment Only</div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="day">Friday</div>
+                            <div class="time">10:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="day">Saturday</div>
+                            <div class="time">10:00 AM - 4:00 PM</div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="day">Sunday</div>
+                            <div class="time">10:00 AM - 4:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="hours-note">
+                        <p>Note: Our farm shop is open Friday through Sunday from May to October.</p>
+                        <p>Tours and animal viewings are available by appointment year-round.</p>
+                    </div>
+                    <a href="#" class="hours-btn">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Here are answers to some common questions we receive. If you don't see your question here, please contact us!</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer farm tours?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we offer guided tours of our farm by appointment. Tours typically last 1-2 hours and include visits with our animals, a walk through our gardens, and time at our farm shop. We charge $10 per person (children under 5 are free). You can schedule a tour by filling out our contact form or calling us directly.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Can I purchase animals from your farm?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we occasionally have Miniature Highland cattle and other animals available for sale. All our animals are raised with love and care, and we ensure they go to homes where they'll continue to receive the same quality of life. Please visit our Animals page to see current availability or contact us for more information about purchasing an animal.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you ship your farm products?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Most of our farm products must be picked up in person at our farm shop during regular hours. However, we do offer shipping for select non-perishable items like honey, preserves, and gift boxes. Fresh produce and eggs are available for local pickup only to ensure the highest quality.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Can I host an event at your farm?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We do allow certain types of small events at our farm, including educational workshops, photography sessions, and small gatherings. Due to space limitations and our focus on the animals' well-being, we evaluate each request individually. Please contact us with details about your proposed event, and we'll let you know if it's something we can accommodate.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer farm-to-table dinners or events?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes! During the summer months (June-August), we host monthly farm-to-table dinners featuring produce from our gardens and locally sourced meats and cheeses. These dinners are prepared by local chefs and served in our garden setting. Tickets must be purchased in advance and typically sell out quickly. Sign up for our newsletter to be notified when tickets become available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-decoration"></div>
+        <div class="newsletter-decoration"></div>
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Join Our Farm Family!</h2>
+                <p class="newsletter-text">Sign up for our monthly newsletter to receive updates on farm happenings, animal births, seasonal produce availability, upcoming events, and special offers.</p>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="nl-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="nl-email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="newsletter-btn">
+                            Subscribe <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="privacy-note">We respect your privacy and will never share your information. You can unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>MooMuffin Acres</h3>
+                    <p>Our family farm dedicated to sustainable practices and happy animals.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="animals.html">Our Animals</a></li>
+                        <li><a href="shop.html">Farm Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Farm Hours</h3>
+                    <p><strong>Farm Stand:</strong></p>
+                    <p>Friday - Sunday: 10am - 4pm<br>May through October</p>
+                    <p><strong>Farm Tours:</strong></p>
+                    <p>By appointment only</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Farm Address<br>City, State Zip</p>
+                    <p><i class="fas fa-envelope"></i> info@yourfarm.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> MooMuffin Acres. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Modal -->
+    <div class="success-modal" id="success-modal">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for contacting us. We've received your message and will get back to you as soon as possible, usually within 24-48 hours.</p>
+            <button id="close-success">Close</button>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
