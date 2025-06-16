@@ -603,20 +603,107 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-.map-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: #e9e9e9;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+/* Map Section */
+.map-section {
+  position: relative;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
 }
 
-.map-text {
-    color: var(--gray-color);
-    font-style: italic;
+.map-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Overlay Card */
+.map-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hours-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.hours-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #555;
+}
+
+.day {
+  font-weight: 600;
+}
+
+.time {
+  font-style: italic;
+}
+
+.hours-note p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+.hours-btn {
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hours-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-card {
+    padding: 20px;
+  }
 }
 
 .address {
