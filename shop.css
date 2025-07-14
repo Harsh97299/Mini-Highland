@@ -377,6 +377,7 @@
 }
 
 .product-description {
+    height: 3.5rem;
     color: var(--gray-color);
     margin-bottom: 15px;
     line-height: 1.5;

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post Title | MooMuffin Acres</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../blogs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo"><h1>MooMuffin Acres</h1></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../animals.html">Our Animals</a></li>
+          <li><a href="../shop.html">Farm Shop</a></li>
+          <li><a href="../blogs.html" class="active">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="container blog-post">
+    <article>
+      <h1 class="post-title">Blog Post Title Goes Here</h1>
+      <div class="post-meta">
+        <span class="post-date"><i class="far fa-calendar"></i> May 10, 2025</span>
+        <span class="post-author"><i class="far fa-user"></i> Jane Smith</span>
+      </div>
+
+      <div class="post-image">
+        <img src="../assets/1-mini.webp" alt="Blog Image Description" />
+      </div>
+
+      <div class="post-body">
+        <p>
+          First paragraph of the blog post goes here. It sets the tone and introduces what the post is about.
+        </p>
+        <p>
+          Continue the story, share tips, experiences, or lessons learned. Use clear and friendly language.
+        </p>
+        <h2>Subheading Example</h2>
+        <p>
+          Add more detail or a secondary topic here. Use multiple headings and paragraphs to break up content.
+        </p>
+        <ul>
+          <li>Use lists to make key points clear.</li>
+          <li>Highlight seasonal tips or events.</li>
+          <li>Include recipes or care instructions if relevant.</li>
+        </ul>
+      </div>
+
+      <div class="back-to-blog">
+        <a href="../blogs.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>MooMuffin Acres</h3>
+          <p>Our family farm dedicated to sustainable practices and happy animals.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../animals.html">Our Animals</a></li>
+            <li><a href="../shop.html">Farm Shop</a></li>
+            <li><a href="../blogs.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-hours">
+          <h3>Farm Hours</h3>
+          <p><strong>Farm Stand:</strong></p>
+          <p>Friday - Sunday: 10am - 4pm<br>May through October</p>
+          <p><strong>Farm Tours:</strong></p>
+          <p>By appointment only</p>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Your Farm Address<br>City, State Zip</p>
+          <p><i class="fas fa-envelope"></i> info@yourfarm.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> MooMuffin Acres. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
