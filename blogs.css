@@ -463,9 +463,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .form-row {
-        flex-direction: row;
-    }
+
 }
 
 @media (min-width: 992px) {
