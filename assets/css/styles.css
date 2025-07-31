@@ -6,22 +6,32 @@
 }
 
 :root {
-    --primary-color: #88c9a1; /* Pastel green */
-    --primary-dark: #5aaf78; /* Darker pastel green for hover states */
-    --secondary-color: #ffcf96; /* Pastel orange/peach */
-    --secondary-dark: #ffbd6f; /* Darker peach for hover states */
-    --accent-color: #ffafcc; /* Pastel pink */
-    --accent-dark: #ff8eb4; /* Darker pink for hover */
-    --light-color: #fbf8ff; /* Very light lavender */
-    --dark-color: #6d8b74; /* Muted forest green */
+    --primary-color: #88c9a1;
+    /* Pastel green */
+    --primary-dark: #5aaf78;
+    /* Darker pastel green for hover states */
+    --secondary-color: #ffcf96;
+    /* Pastel orange/peach */
+    --secondary-dark: #ffbd6f;
+    /* Darker peach for hover states */
+    --accent-color: #ffafcc;
+    /* Pastel pink */
+    --accent-dark: #ff8eb4;
+    /* Darker pink for hover */
+    --light-color: #fbf8ff;
+    /* Very light lavender */
+    --dark-color: #6d8b74;
+    /* Muted forest green */
     --gray-color: #8e8e98;
     --white-color: #ffffff;
     --success-color: #a0e4b0;
     --warning-color: #ffe499;
     --error-color: #ffafaf;
-    --light-purple: #bde0fe; /* Pastel light blue */
-    --light-yellow: #fff2b2; /* Pastel light yellow */
-    
+    --light-purple: #bde0fe;
+    /* Pastel light blue */
+    --light-yellow: #fff2b2;
+    /* Pastel light yellow */
+
     /* Font settings */
     --heading-font: 'Comic Sans MS', 'Marker Felt', cursive;
 }
@@ -51,7 +61,10 @@ img {
     height: auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
     line-height: 1.2;
 }
@@ -273,7 +286,138 @@ h1, h2, h3, h4 {
     color: #002a1d;
     background-color: rgba(255, 255, 255, 0.3);
 }
+/* Location Section Styles */
+.location {
+    padding: 60px 0;
+}
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Map Styles - Mobile First Approach */
+.map-placeholder {
+    width: 100%;
+    max-width: 600px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 300px; /* Reduced height for mobile */
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+.gmap_iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Address Styles */
+.address {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.address i {
+    color: #007bff;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.address p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .location-details {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .map-placeholder {
+        flex: 1;
+    }
+    
+    .address {
+        flex: 1;
+        max-width: none;
+    }
+    
+    .mapouter {
+        height: 350px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .mapouter {
+        height: 400px;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .mapouter {
+        height: 250px;
+    }
+    
+    .address {
+        padding: 15px;
+    }
+    
+    .address p {
+        font-size: 1rem;
+    }
+}
 /* === HERO SECTION === */
 .hero {
     height: 80vh;
@@ -375,7 +519,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
-.testimonials::before, 
+.testimonials::before,
 .testimonials::after {
     content: "";
     position: absolute;
@@ -452,7 +596,7 @@ h1, h2, h3, h4 {
 /* === NEWSLETTER SECTION === */
 .newsletter {
     padding: 80px 0;
-    background-color: var(--light-color);   
+    background-color: var(--light-color);
     background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20,50 C20,50 35,20 50,20 C65,20 80,50 80,50 C80,50 65,80 50,80 C35,80 20,50 20,50 Z" stroke="%23FFAFCC" fill="none" stroke-width="1" opacity="0.3"/><circle cx="50" cy="50" r="5" fill="%23FFAFCC" opacity="0.3"/></svg>');
 }
 
@@ -605,105 +749,105 @@ h1, h2, h3, h4 {
 
 /* Map Section */
 .map-section {
-  position: relative;
-  padding: 60px 20px;
-  background-color: #f9f9f9;
+    position: relative;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
 }
 
 .map-container {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
 }
 
 .map-container iframe {
-  width: 100%;
-  height: 450px;
-  border: 0;
-  border-radius: 12px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 12px;
 }
 
 /* Overlay Card */
 .map-overlay {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .hours-card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
 .hours-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
 }
 
 .hours-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .hours-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  color: #555;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
 }
 
 .day {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .time {
-  font-style: italic;
+    font-style: italic;
 }
 
 .hours-note p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #777;
-  text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
 }
 
 .hours-btn {
-  display: block;
-  text-align: center;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #2e7d32;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .hours-btn:hover {
-  background-color: #1b5e20;
+    background-color: #1b5e20;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hours-grid {
-    grid-template-columns: 1fr;
-  }
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .hours-card {
-    padding: 20px;
-  }
+    .hours-card {
+        padding: 20px;
+    }
 }
 
 .address {
@@ -917,45 +1061,45 @@ h1, h2, h3, h4 {
     .navbar {
         display: block;
     }
-    
+
     .mobile-menu-btn {
         display: none;
     }
-    
+
     .hero h1 {
         font-size: 3.5rem;
     }
-    
+
     .hero p {
         font-size: 1.5rem;
     }
-    
+
     .feature-cards {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .testimonial-cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .newsletter-form {
         flex-direction: row;
     }
-    
+
     .newsletter-form input {
         margin-bottom: 0;
         margin-right: 10px;
         border-radius: 4px 0 0 4px;
     }
-    
+
     .newsletter-form button {
         border-radius: 0 4px 4px 0;
     }
-    
+
     .value-cards {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .footer-content {
         grid-template-columns: repeat(4, 1fr);
     }
