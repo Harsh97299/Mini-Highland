@@ -77,9 +77,11 @@
     0% {
         transform: translateY(0) rotate(0deg);
     }
+
     50% {
         transform: translateY(-20px) rotate(5deg);
     }
+
     100% {
         transform: translateY(0) rotate(0deg);
     }
@@ -449,20 +451,20 @@
     .featured-post-card {
         flex-direction: row;
     }
-    
+
     .featured-post-image {
         width: 50%;
         height: auto;
     }
-    
+
     .featured-post-content {
         width: 50%;
     }
-    
+
     .posts-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
 
 }
 
@@ -470,7 +472,7 @@
     .posts-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .hero-title {
         font-size: 3.5rem;
     }
@@ -480,8 +482,52 @@
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
     .featured-post-image {
         height: 200px;
     }
+}
+
+/* Make logo clickable */
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.logo a:hover {
+    color: inherit;
+}
+
+/* Make entire post cards clickable */
+.post-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Keep the existing post-link styling for consistency but make it non-interactive */
+.post-link {
+    pointer-events: none;
+    color: inherit;
+}
+
+/* Make featured post clickable */
+.featured-post-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }

@@ -174,24 +174,42 @@
 
     <!-- Map Section -->
     <section class="map-section">
-        <div class="map-container">
-            <!-- Example: Map embed for a rural farm in Montana, USA -->
-            <div class="map-placeholder">
-                <!-- Embedded Google Map with a Pin in Rural Montana -->
-                <div style="width: 100%; max-width: 600px; margin: auto;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15085.296354104195!2d-112.0973689!3d45.8652425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5342f635278797e5%3A0x3b0ccf5a648e3901!2sWhitehall%2C%20Montana%2059759%2C%20USA!5e0!3m2!1sen!2sus!4v1716202500000!5m2!1sen!2sus"
-                        width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+        <div class="container">
+            <div class="map-wrapper">
+                <div class="map-container">
+                    <div class="map-header">
+                        <h2 class="map-title">Find Our Farm</h2>
+                        <p class="map-subtitle">Located in beautiful rural Montana, we're easy to find and worth the
+                            visit!</p>
+                    </div>
+
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15085.296354104195!2d-112.0973689!3d45.8652425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5342f635278797e5%3A0x3b0ccf5a648e3901!2sWhitehall%2C%20Montana%2059759%2C%20USA!5e0!3m2!1sen!2sus!4v1716202500000!5m2!1sen!2sus"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="MooMuffin Acres Location Map">
+                        </iframe>
+                    </div>
+
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=Whitehall,Montana" target="_blank" rel="noopener noreferrer"
+                            class="map-btn map-btn-primary">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </a>
+                        <a href="tel:5551234567" class="map-btn map-btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Call Us
+                        </a>
+                    </div>
                 </div>
 
-            </div>
-        </div>
-        <div class="map-overlay">
-            <div class="container">
                 <div class="hours-card">
+                    <div class="hours-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
                     <h3 class="hours-title">Farm Hours</h3>
+
                     <div class="hours-grid">
                         <div class="hours-item">
                             <div class="day">Monday - Thursday</div>
@@ -210,11 +228,17 @@
                             <div class="time">10:00 AM - 4:00 PM</div>
                         </div>
                     </div>
+
                     <div class="hours-note">
-                        <p>Note: Our farm shop is open Friday through Sunday from May to October.</p>
-                        <p>Tours and animal viewings are available by appointment year-round.</p>
+                        <p><strong>Farm Shop:</strong> Open Friday through Sunday from May to October.</p>
+                        <p><strong>Tours:</strong> Available by appointment year-round.</p>
                     </div>
-                    <a href="#" class="hours-btn">Schedule a Visit</a>
+
+                    <a href="#contact-form" class="hours-btn">
+                        <i class="fas fa-calendar-check"></i>
+                        Schedule a Visit
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
