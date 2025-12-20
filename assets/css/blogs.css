@@ -283,6 +283,21 @@
     object-fit: cover;
 }
 
+/* Featured image for single blog posts */
+.featured-image {
+    max-width: 1200px;
+    margin: 0 auto 24px;
+    overflow: hidden;
+}
+.featured-image img {
+    width: 100%;
+    height: auto; /* maintain intrinsic aspect ratio */
+    max-width: 1200px;
+    aspect-ratio: 1200 / 630; /* preferred intrinsic ratio */
+    object-fit: cover;
+    display: block;
+}
+
 .post-image .post-category {
     position: absolute;
     bottom: -12px;
