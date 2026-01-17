@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.category-tab');
     const cards = document.querySelectorAll('.post-card');
     const pageLinks = document.querySelectorAll('.page-link');
-    const postsPerPage = 3;
+    const postsPerPage = 6;
     let currentPage = 1;
     let currentCategory = 'all';
 
